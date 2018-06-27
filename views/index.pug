@@ -1,0 +1,23 @@
+doctype html
+html(lang='de-DE')
+  head
+    title!= title
+
+    meta(charset='utf-8')
+    meta(
+      name='viewport'
+      content='width=device-width, initial-scale=1.0'
+    )
+
+    != styleTags
+
+  body
+
+    div#root!= markup
+
+    if bundles
+      each bundle in bundles
+        script(src= assetsPath+bundle.file type='text/javascript')
+
+    if assets
+      script(src= assets.js type='text/javascript')

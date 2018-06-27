@@ -6,6 +6,7 @@ import Home from '../../pages/Home';
 
 const Routes = () => (
   <Switch>
+    {/* TODO: add additional routes here */}
     <Route exact path="/" component={Home} />
   </Switch>
 );

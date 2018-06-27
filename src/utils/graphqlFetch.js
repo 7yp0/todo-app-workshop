@@ -1,10 +1,11 @@
 // @flow
 import nodeFetch from 'node-fetch';
+import localStore from 'store';
+
+import { LOCAL_STORAGE_KEY } from './authorization';
 
 async function fetch(uri: string, options: Object): Promise<Object> {
-  // const { token: newAccessToken } = await getAuthoriaztion(); // TODO: get authorization from local storage
-
-  const newAccessToken = '1234';
+  const { token: newAccessToken } = localStore.get(LOCAL_STORAGE_KEY);
 
   const newOptions = {
     ...options,

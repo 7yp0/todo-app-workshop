@@ -5,9 +5,7 @@ import styled, { keyframes } from 'styled-components';
 import ErrorMessage from '../ErrorMessage';
 
 type Props = {
-  error?: boolean,
-  pastDelay?: boolean,
-  timedOut?: boolean,
+  error?: Error,
 };
 
 const fade = keyframes`
@@ -32,14 +30,14 @@ const StyledLoader = styled.div`
   animation-direction: alternate;
 `;
 
-const Loader = (props: Props): Node => {
-  const { error, pastDelay = true } = props;
+const Status = (props: Props): Node => {
+  const { error } = props;
 
   if (error) {
     return <ErrorMessage />;
   }
 
-  return pastDelay && <StyledLoader />;
+  return <StyledLoader />;
 };
 
-export default Loader;
+export default Status;

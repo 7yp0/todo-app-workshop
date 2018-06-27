@@ -1,5 +1,9 @@
 [ignore]
-
+.*/node_modules/react-apollo/react-apollo.umd.js.flow
+.*/node_modules/webpack-cli/.*
+.*/node_modules/graphql/subscription/mapAsyncIterator.js.flow
+.*/node_modules/graphql/error/locatedError.js.flow
+.*/node_modules/styled-components/src/native
 
 [include]
 
@@ -10,5 +14,7 @@ flow-typed
 
 [options]
 module.ignore_non_literal_requires=true
+esproposal.decorators=ignore
+module.name_mapper.extension='gql' -> '<PROJECT_ROOT>/graphqlShim'
 
 [strict]

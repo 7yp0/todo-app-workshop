@@ -33,6 +33,7 @@
     ],
     "no-console": 2,
     "max-len": 0,
+    "import/no-cycle": 0,
     "no-case-declarations": 0,
     "arrow-body-style": 2,
     "new-cap": 0,

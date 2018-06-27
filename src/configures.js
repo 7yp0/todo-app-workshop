@@ -13,7 +13,7 @@ import { InMemoryCache } from 'apollo-cache-inmemory';
 
 import config from './config';
 import reducers, { type AppState } from './reducers';
-import graphqlFetch from './utils/graphql/fetch';
+import graphqlFetch from './utils/graphqlFetch';
 import { runsInServer } from './utils/environment';
 
 const { graphqlUrl } = config;

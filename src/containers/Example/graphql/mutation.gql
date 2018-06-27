@@ -1,0 +1,9 @@
+mutation mutateSomething($test: String!) {
+    myMutation(
+        test: $test,
+    ){
+        id
+        example
+        usw
+    }
+}

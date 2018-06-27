@@ -1,0 +1,8 @@
+mutation querySomething($test: String!) {
+    id
+    example
+    filter(test: $test) {
+      id
+      usw
+    }
+}

@@ -1,7 +1,17 @@
 // @flow
+import example, {
+  defaultState as exampleState,
+  type ExampleState,
+} from './example';
 
-export type AppState = {};
+export type AppState = {
+  +example: ExampleState,
+};
 
-export const initialState = {};
+export const initialState = {
+  example: exampleState,
+};
 
-export default {};
+export default {
+  example,
+};

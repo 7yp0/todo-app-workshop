@@ -4,7 +4,7 @@ services:
   app:
     build: ./
     ports:
-      - "127.0.0.1:8000:8000"
+      - "8000:8000"
     depends_on:
       - api
     command: ['sh', '-c', 'yarn start']
@@ -18,7 +18,7 @@ services:
   api:
     build: ../graphql-api/
     ports:
-      - "127.0.0.1:3000:3000"
+      - "3000:3000"
     depends_on:
       - database
     environment:

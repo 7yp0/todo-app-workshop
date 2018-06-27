@@ -8,6 +8,7 @@ import Router from 'react-router-dom/BrowserRouter';
 import { configureStore, configureClient } from './configures';
 import config from './config';
 import { initialState } from './reducers';
+import App from './App';
 
 async function render(): Promise<void> {
   const element = document.getElementById('root');
@@ -23,7 +24,7 @@ async function render(): Promise<void> {
     <Provider store={store}>
       <ApolloProvider client={client}>
         <Router>
-          <div>qqqq</div>
+          <App />
         </Router>
       </ApolloProvider>
     </Provider>

@@ -31,7 +31,7 @@ async function render(): Promise<void> {
   );
 
   // $FlowFixMe - hydrate is part of ReactDOM
-  ReactDOM.hydrate(<Wrapper />, element);
+  ReactDOM.render(<Wrapper />, element);
 
   // Webpack Hot Module Replacement
   // $FlowFixMe - module.hot provided by webpack

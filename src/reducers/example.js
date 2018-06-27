@@ -1,5 +1,5 @@
 // @flow
-import { type ExampleActions } from '../actions/example';
+import { type ExampleActions, EXAMPLE_1 } from '../actions/example';
 
 export type Example = {
   +test: string,
@@ -17,10 +17,22 @@ export default function example(
   state?: ExampleState = defaultState,
   action: ExampleActions,
 ): ExampleState {
-  const { type } = action;
+  const { type, payload } = action;
 
   switch (type) {
-    // TODO: add cases here for different action types
+    case EXAMPLE_1:
+      if (!payload) {
+        return state;
+      }
+
+      return {
+        ...state,
+        example: {
+          ...state.example,
+          test: payload.test,
+        },
+      };
+
     default:
       return state;
   }

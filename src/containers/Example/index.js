@@ -70,7 +70,7 @@ class ExampleContainer extends Component<Props> {
                   onError={() => {}}
                 >
                   {(
-                    myMutation: MutationFunction<{ test: string }>,
+                    mutateSomething: MutationFunction<{ test: string }>,
                     {
                       loading: mutationLoading,
                       error: mutationError,
@@ -84,7 +84,7 @@ class ExampleContainer extends Component<Props> {
                       <button
                         type="button"
                         onClick={() => {
-                          myMutation({ variables: { test: 'test' } });
+                          mutateSomething({ variables: { test: 'test' } });
                         }}
                       >
                         mutate

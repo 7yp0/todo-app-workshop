@@ -8,3 +8,7 @@ export function saveTokenToLocalStorage(token: string): boolean {
 
   return true;
 }
+
+export function getTokenFromLocalStorage(): ?string {
+  return localStore.get(LOCAL_STORAGE_KEY);
+}

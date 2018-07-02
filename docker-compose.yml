@@ -12,7 +12,7 @@ services:
       - ./src:/var/www/src
     environment:
       - NODE_ENV=development
-      - GRAPHQL_URL=api/graphql/
+      - GRAPHQL_URL=http://localhost:3000/graphql
 
 
   api:

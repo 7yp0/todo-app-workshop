@@ -36,6 +36,7 @@
     "import/no-cycle": 0,
     "no-case-declarations": 0,
     "arrow-body-style": 2,
+    "arrow-parens": 0,
     "new-cap": 0,
     "generator-star-spacing": 0,
     "import/no-extraneous-dependencies": 0,
@@ -50,6 +51,7 @@
         "maxEOF": 1
       }
     ],
+    "react/destructuring-assignment": 0,
     "react/require-default-props": 0,
     "no-await-in-loop": 2,
     "no-return-await": 2,

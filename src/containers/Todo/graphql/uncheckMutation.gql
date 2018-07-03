@@ -1,0 +1,7 @@
+mutation uncheck($id: String!) {
+  unCheckTodo(id: $id) {
+    id
+    title
+    checked
+  }
+}

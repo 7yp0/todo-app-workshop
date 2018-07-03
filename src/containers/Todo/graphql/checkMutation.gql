@@ -1,0 +1,7 @@
+mutation check($id: String!) {
+  checkTodo(id: $id) {
+    id
+    title
+    checked
+  }
+}

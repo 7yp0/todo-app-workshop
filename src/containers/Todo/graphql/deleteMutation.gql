@@ -1,0 +1,7 @@
+mutation deleteTodos($ids: [String!]!) {
+  deleteTodos(ids: $ids) {
+    id
+    title
+    checked
+  }
+}

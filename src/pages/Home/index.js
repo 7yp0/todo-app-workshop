@@ -1,6 +1,8 @@
 // @flow
 import React from 'react';
 
-const Home = () => <div>Home</div>;
+import Login from '../../containers/Login';
 
-export default Home;
+const Todo = () => <Login />;
+
+export default Todo;

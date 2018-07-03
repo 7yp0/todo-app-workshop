@@ -12,3 +12,9 @@ export function saveTokenToLocalStorage(token: string): boolean {
 export function getTokenFromLocalStorage(): ?string {
   return localStore.get(LOCAL_STORAGE_KEY);
 }
+
+export function deleteTokenFromLocalStorage(): boolean {
+  localStore.remove(LOCAL_STORAGE_KEY);
+
+  return true;
+}
